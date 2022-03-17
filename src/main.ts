@@ -1,4 +1,4 @@
-const Rollbar = require('rollbar');
+import Rollbar from 'rollbar';
 
 const rollbar = new Rollbar({
   accessToken: 'POST_SERVER_ITEM_ACCESS_TOKEN',
@@ -10,6 +10,4 @@ const rollbar = new Rollbar({
 });
 
 console.log('hello-world');
-
-export {}
 
