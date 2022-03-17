@@ -1,0 +1,27 @@
+{
+  "name": "bug-example-ncc",
+  "version": "1.0.0",
+  "description": "bug reproduction for ncc",
+  "main": "index.js",
+  "scripts": {
+    "test": "ncc build src/main.ts -m -s -o build/main.js && node build/main.js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesdeuter/bug-example-ncc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesdeuter/bug-example-ncc/issues"
+  },
+  "homepage": "https://github.com/charlesdeuter/bug-example-ncc#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.33.3",
+    "rollbar": "^2.24.1",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
